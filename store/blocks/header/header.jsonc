@@ -7,9 +7,8 @@
   },
   "header-layout.desktop": {
     "children": [
-      "header-layout.desktop.top",
-      "header-layout.desktop.bottom",
-      "sticky-layout#4-desktop"]
+      "sticky-layout#4-desktop"
+    ]
   },
 
 
@@ -22,9 +21,24 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "flex-layout.col#4-desktop"
+    ]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.col#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#4-desktop",
+      "flex-layout.row#menu-desktop"
+    ]
+  },"flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -35,25 +49,82 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.row#account-desktop"
+    ]
+  },"search-bar": {
+      "props": {
+        "blockClass": "search-bar",
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true,
+        "width": "grow",
+        "displayMode": "search-button",
+        "emptyPlaceholder": "Busque Aqui"
+      }
+    }
+  ,
+  "flex-layout.row#account-desktop": {
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "verticalAlign": "center",
+      "width": "320px"
+    },
+    "children": [
+      "flex-layout.col#login-desktop",
+      "flex-layout.col#cart-desktop"
+    ]
+  },"flex-layout.col#login-desktop": {
+    "props": {
+      "blockClass": "login-button",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "verticalAlign": "center",
+      "width": "grow"
+    },
+    "children": [
+      "login"
+    ]
+  },"flex-layout.col#cart-desktop": {
+    "props": {
+      "blockClass": "login-button",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "width": "grow"
+    },
+    "children": [
       "minicart.v2"
     ]
+  },
+  "login": {
+    "props": {
+      "blockClass": "login",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "showIconProfile": true,
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "iconLabel": "Bem Vindo!"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -62,6 +133,22 @@
       "url": "https://uniformeasy-static.online.pro.br/arquivos/logo-uniform-easy.png?v=4",
       "width": "203"
     }
+  },
+  "flex-layout.row#menu-desktop": {
+    "props": {
+      "blockClass": "menu-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "drawer",
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ]
   },
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]

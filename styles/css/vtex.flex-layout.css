@@ -1,6 +1,16 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
-  padding: 0 0.5rem;
+.flexRowContent.flexRowContent--main-header {
+  justify-content: space-between;
+}
+.flexRowContent.flexRowContent--menu-header {
+  justify-content: space-between;
+}
+
+.flexRow {
+  align-items: center;
+}
+
+.flexRowContent {
+  align-items: center;
 }
 
 @media screen and (min-width: 40em) {

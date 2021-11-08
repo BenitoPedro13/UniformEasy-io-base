@@ -1,0 +1,10 @@
+.styledLinkContent {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.styledLinkContent:hover {
+  color: #fc9f3e;
+  text-decoration: underline;
+}
