@@ -1,5 +1,6 @@
 .flexRowContent.flexRowContent--main-header {
   justify-content: space-between;
+  box-shadow: none;
 }
 .flexRowContent.flexRowContent--menu-header {
   justify-content: space-between;

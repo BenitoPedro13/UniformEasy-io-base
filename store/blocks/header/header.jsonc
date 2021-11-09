@@ -22,23 +22,11 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.col#4-desktop"
-    ]
-  },
-  "flex-layout.col#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
       "flex-layout.row#4-desktop",
       "flex-layout.row#menu-desktop"
     ]
-  },"flex-layout.row#4-desktop": {
+  },
+  "flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",

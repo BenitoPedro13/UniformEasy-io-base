@@ -17,7 +17,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/maple---bear/infantil",
+        "href": "/maple-bear/infantil",
         "noFollow": false,
         "tagTitle": "Maple Bear Infantil",
         "text": "Maple Bear Infantil"
@@ -98,10 +98,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/maple-bear/fundamental-i-e-ii",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Maple Bear Fundamental",
+        "text": "Maple Bear Fundamental"
       }
     }
   },
@@ -113,10 +113,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/politica-de-trocas-e-devolucoes",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Trocas e devoluçoes",
+        "text": "Trocas e devoluçoes"
       }
     },
     "blocks": [
